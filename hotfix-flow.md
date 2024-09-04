@@ -9,9 +9,10 @@
 | hotfix/some | # do hotfix and commit       |                 |                 |
 |             | git add .                    |                 |                 |
 |             | git commit -m "Fix some"     |                 |                 |
+|             | # switch to main             |                 |                 |
+|             | git checkout main            |                 |                 |
 |             |                              |                 |                 |
 | main        | # merge hotfix to main       |                 |                 |
-|             | git checkout main            |                 |                 |
 |             | git merge hotfix/some        |                 |                 |
 |             | # apply to origin main       |                 |                 |
 |             | git push origin main --force |                 |                 |
@@ -40,7 +41,7 @@
 |             |                             |                 |                        |
 |             |                             | main            | # merge hotfix         |
 |             |                             |                 | main <- hotfix/some    |
-|             |                             |                 | # remove hotfix branch |
+|             |                             |                 | # remove hotfix-branch |
 |             |                             |                 | proper action          |
 |             |                             |                 |                        |
 | hotfix/some | # switch to main            |                 |                        |
