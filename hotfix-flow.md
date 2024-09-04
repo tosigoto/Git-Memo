@@ -1,7 +1,7 @@
 # hotfix flow
 
 
-## 一人で開発していて、リモートリポジトリを　ローカルのバックアップ　として使っている場合
+## 一人で開発していて、リモートリポジトリをバックアップとして使っている場合
 | branch      | git                          | (origin) branch | (origin) action |
 |-------------|------------------------------|-----------------|-----------------|
 | main        | **# get hotfix-branch**      |                 |                 |
@@ -17,15 +17,9 @@
 |             | git merge hotfix/some        |                 |                 |
 |             | **# apply to origin main**   |                 |                 |
 |             | git push origin main --force |                 |                 |
-|             | **# switch to develop**      |                 |                 |
-|             | git checkout develop         |                 |                 |
-|             |                              |                 |                 |
-| develop     | **# rebase develop to main** |                 |                 |
-|             | git rebase main              |                 |                 |
 |             | **# remove hotfix-branch**   |                 |                 |
 |             | git branch -d hotfix/some    |                 |                 |
 |             | **# End**                    |                 |                 |
-|             |                              |                 |                 |
 
 
 ## 複数人で開発している場合
@@ -48,7 +42,7 @@
 | hotfix/some | **# switch to main**        |                 |                            |
 |             | git checkout main           |                 |                            |
 |             |                             |                 |                            |
-| main        | **# fetch from origin**     |                 |                            |
+| main        | **# fetch origin**          |                 |                            |
 |             | git fetch                   |                 |                            |
 |             | **# pull origin**           |                 |                            |
 |             | git pull origin main        |                 |                            |
@@ -60,4 +54,3 @@
 |             | **# remove hotfix-branch**  |                 |                            |
 |             | git branch -d hotfix/some   |                 |                            |
 |             | **# End**                   |                 |                            |
-|             |                             |                 |                            |

@@ -1,10 +1,10 @@
 # feature flow
 
 
-## 一人で開発していて、リモートリポジトリを　ローカルのバックアップ　として使っている場合
+## 一人で開発していて、リモートリポジトリをバックアップとして使っている場合
 | branch       | git                          | (origin) branch | (origin) action |
 |--------------|------------------------------|-----------------|-----------------|
-| develop      | **# get feature-branch**     |                 |                 |
+| main         | **# get feature-branch**     |                 |                 |
 |              | git checkout -b feature/some |                 |                 |
 |              |                              |                 |                 |
 | feature/some | **# do feature and commit**  |                 |                 |
@@ -17,15 +17,9 @@
 |              | git merge feature/some       |                 |                 |
 |              | **# apply to origin main**   |                 |                 |
 |              | git push origin main --force |                 |                 |
-|              | **# switch to develop**      |                 |                 |
-|              | git checkout develop         |                 |                 |
-|              |                              |                 |                 |
-| develop      | **# rebase develop to main** |                 |                 |
-|              | git rebase main              |                 |                 |
 |              | **# remove feature-branch**  |                 |                 |
 |              | git branch -d feature/some   |                 |                 |
 |              | **# End**                    |                 |                 |
-|              |                              |                 |                 |
 
 
 ## 複数人で開発している場合
@@ -60,4 +54,3 @@
 |              | **# remove feature-branch**  |                 |                             |
 |              | git branch -d feature/some   |                 |                             |
 |              | **# End**                    |                 |                             |
-|              |                              |                 |                             |
