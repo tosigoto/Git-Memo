@@ -1,7 +1,14 @@
 # hotfix flow
 
 
-## 一人で開発していて、リモートリポジトリをバックアップとして使っている場合
+- [hotfix flow](#hotfix-flow)
+  - [Solo - hotfix flow](#solo---hotfix-flow)
+  - [Team - hotfix flow](#team---hotfix-flow)
+
+
+## Solo - hotfix flow
+  - 一人でリモートリポジトリを使っている場合
+
 | branch      | git                          | (origin) branch | (origin) action |
 |-------------|------------------------------|-----------------|-----------------|
 | main        | **# get hotfix-branch**      |                 |                 |
@@ -22,7 +29,9 @@
 |             | **# End**                    |                 |                 |
 
 
-## 複数人で開発している場合
+## Team - hotfix flow
+  - チームでリモートリポジトリを使っている場合
+
 | branch      | git                         | (origin) branch | (origin) action            |
 |-------------|-----------------------------|-----------------|----------------------------|
 | main        | **# get hotfix-branch**     |                 |                            |

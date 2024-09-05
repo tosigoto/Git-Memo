@@ -1,7 +1,14 @@
 # feature flow
 
 
-## 一人で開発していて、リモートリポジトリをバックアップとして使っている場合
+- [feature flow](#feature-flow)
+  - [Solo - feature flow](#solo---feature-flow)
+  - [Team - feature flow](#team---feature-flow)
+
+
+## Solo - feature flow
+  - 一人でリモートリポジトリを使っている場合
+
 | branch       | git                          | (origin) branch | (origin) action |
 |--------------|------------------------------|-----------------|-----------------|
 | main         | **# get feature-branch**     |                 |                 |
@@ -22,7 +29,9 @@
 |              | **# End**                    |                 |                 |
 
 
-## 複数人で開発している場合
+## Team - feature flow
+  - チームでリモートリポジトリを使っている場合
+
 | branch       | git                          | (origin) branch | (origin) action             |
 |--------------|------------------------------|-----------------|-----------------------------|
 | develop      | **# get feature-branch**     |                 |                             |
