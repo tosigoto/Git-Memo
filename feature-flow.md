@@ -12,13 +12,13 @@
 | branch       | git                          | (origin) branch | (origin) action |
 |--------------|------------------------------|-----------------|-----------------|
 | main         | **# get feature-branch**     |                 |                 |
-|              | git checkout -b feature/some |                 |                 |
+|              | git switch -c feature/some   |                 |                 |
 |              |                              |                 |                 |
 | feature/some | **# do feature and commit**  |                 |                 |
 |              | git add .                    |                 |                 |
 |              | git commit -m "Add some"     |                 |                 |
 |              | **# switch to main**         |                 |                 |
-|              | git checkout main            |                 |                 |
+|              | git switch main              |                 |                 |
 |              |                              |                 |                 |
 | main         | **# merge feature to main**  |                 |                 |
 |              | git merge feature/some       |                 |                 |
@@ -35,7 +35,7 @@
 | branch       | git                          | (origin) branch | (origin) action             |
 |--------------|------------------------------|-----------------|-----------------------------|
 | develop      | **# get feature-branch**     |                 |                             |
-|              | git checkout -b feature/some |                 |                             |
+|              | git switch -c feature/some   |                 |                             |
 |              |                              |                 |                             |
 | feature/some | **# do feature and commit**  |                 |                             |
 |              | git add .                    |                 |                             |
@@ -49,14 +49,14 @@
 |              |                              |                 | proper action               |
 |              |                              |                 |                             |
 | feature/some | **# switch to main**         |                 |                             |
-|              | git checkout main            |                 |                             |
+|              | git switch main              |                 |                             |
 |              |                              |                 |                             |
 | main         | **# fetch from origin**      |                 |                             |
 |              | git fetch                    |                 |                             |
 |              | **# pull origin**            |                 |                             |
 |              | git pull origin main         |                 |                             |
 |              | **# switch to develop**      |                 |                             |
-|              | git checkout develop         |                 |                             |
+|              | git switch develop           |                 |                             |
 |              |                              |                 |                             |
 | develop      | **# rebase to main**         |                 |                             |
 |              | git rebase main              |                 |                             |

@@ -12,13 +12,13 @@
 | branch      | git                          | (origin) branch | (origin) action |
 |-------------|------------------------------|-----------------|-----------------|
 | main        | **# get hotfix-branch**      |                 |                 |
-|             | git checkout -b hotfix/some  |                 |                 |
+|             | git switch -c hotfix/some    |                 |                 |
 |             |                              |                 |                 |
 | hotfix/some | **# do hotfix and commit**   |                 |                 |
 |             | git add .                    |                 |                 |
 |             | git commit -m "Fix some"     |                 |                 |
 |             | **# switch to main**         |                 |                 |
-|             | git checkout main            |                 |                 |
+|             | git switch main              |                 |                 |
 |             |                              |                 |                 |
 | main        | **# merge hotfix to main**   |                 |                 |
 |             | git merge hotfix/some        |                 |                 |
@@ -35,7 +35,7 @@
 | branch      | git                         | (origin) branch | (origin) action            |
 |-------------|-----------------------------|-----------------|----------------------------|
 | main        | **# get hotfix-branch**     |                 |                            |
-|             | git checkout -b hotfix/some |                 |                            |
+|             | git switch -c hotfix/some   |                 |                            |
 |             |                             |                 |                            |
 | hotfix/some | **# do hotfix and commit**  |                 |                            |
 |             | git add .                   |                 |                            |
@@ -49,14 +49,14 @@
 |             |                             |                 | proper action              |
 |             |                             |                 |                            |
 | hotfix/some | **# switch to main**        |                 |                            |
-|             | git checkout main           |                 |                            |
+|             | git switch main             |                 |                            |
 |             |                             |                 |                            |
 | main        | **# fetch origin**          |                 |                            |
 |             | git fetch                   |                 |                            |
 |             | **# pull origin**           |                 |                            |
 |             | git pull origin main        |                 |                            |
 |             | **# switch to develop**     |                 |                            |
-|             | git checkout develop        |                 |                            |
+|             | git switch develop          |                 |                            |
 |             |                             |                 |                            |
 | develop     | **# rebase to main**        |                 |                            |
 |             | git rebase main             |                 |                            |
